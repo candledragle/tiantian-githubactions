@@ -32,9 +32,9 @@ jobs:
         touch test.txt
         echo Add other actions to build, > test.txt
         echo test, and deploy your project. > test.txt
-    - name: upload
     - uses: actions/upload-artifact@v2
-      with：
+    - name: upload
+      with:
         name: my-artifact
-        path: test.txt
+        path: path/to/artifact/test.txt
       
